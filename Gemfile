@@ -55,16 +55,3 @@ gem 'mail_form'
 gem 'simple_form'
 gem 'autoprefixer-rails'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
