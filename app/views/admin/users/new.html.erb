@@ -1,4 +1,4 @@
-
+<h1>Sign Up</h1>
 <%= form_for [:admin, @user] do |f| %>
 
   <% if @user.errors.any? %>
@@ -19,7 +19,7 @@
     </div>
     <div class="form-group">
       <%= f.label :password %>
-      <%= f.password_field :password_hash, class:'form-control' %>
+      <%= f.password_field :password, class:'form-control' %>
     </div>
     <div class="form-group">
       <%= f.label :password_confirmation %>
@@ -27,6 +27,7 @@
     </div>
     
     </div>
-      <%= f.submit "Submit", class:'btn btn-primary' %>
-      <%= link_to 'Cancel', admin_users_path, class:'btn btn-default' %>
+      <%= f.submit 'Add', class:'btn btn-primary' %>
+      <%= link_to 'cancel', admin_users_path, class:'btn btn-primary' %>
   <% end %>
+
