@@ -1,0 +1,91 @@
+body{
+	font-family: 'Arial', sans-sarif;
+	background: #eee;
+	line-height: 1.6em;
+}
+.navbar{
+	overflow:auto;
+	min-height:100px;
+	background:$primary-color;
+	color:#fff;
+	font-size:18px;
+	border:0;
+	border-radius:0;
+}
+.navbar h1{
+	margin:10px 0 0 0;
+	padding: 0; 
+}
+
+.navbar a{
+	color:#fff !important;
+}
+
+.navbar a:hover{
+	color:$secondary-color !important;
+}
+
+.navbar a.navbar-brand:hover { color:#fff !important; }
+
+.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color:#ff953f !important;
+    background-color:none; 
+}
+.navbar ul{
+	margin-top:22px;
+}
+
+.search-form{
+	margin-top:0px;
+}
+
+.search-form input[type='text']{
+	border-radius: 10px;
+	height:30px;
+}
+
+.search-form .btn{
+	border:0;
+	height: 30px;
+	margin-top: 0;
+	border-radius: 0;
+	margin-left: 5px;
+	background-color: #ff953f;
+}
+
+.btn:hover{
+	background-color:$primary-btn-color;
+}
+
+.post img{
+	width: 100%;
+}
+
+.post{
+	background-color: #fff;
+	border:1px #ccc solid;
+}
+
+.post-content {
+	padding:20px;
+}
+
+.post h3{
+	margin:0;
+	padding: 0;
+}
+
+.post small{
+	background:$primary-color;
+	color:#fff;
+	display:block;
+	padding: 10px 15px;
+	margin: 10px 0;
+}
+
+footer{
+	background:$primary-color;
+	color: #fff;
+	text-align: center;
+	padding: 10px 15px;
+}

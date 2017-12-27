@@ -1,0 +1,3 @@
+rblog_db
+rblog_user
+rblogpass

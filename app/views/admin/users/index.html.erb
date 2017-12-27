@@ -1,0 +1,21 @@
+
+              <h2 class="page-header"> Manage Users <%= link_to "Add New", new_admin_user_path, class: 'btn btn-primary' %> </h2>
+              <table class="table table-striped">
+                <tr>
+                  <th> Users </th>
+                  <th> Emails </th>
+                  <th> Action </th>
+                </tr>
+                <tr>
+                  <% @users.each do |user| %>
+                  <td> <%= user.name %> </td>
+                  <td> <%= user.email %> </td>
+                  <td> <%= category.created_at.to_time.strftime('%B %e at %l:%M %p') %> </td>
+                  <td> <%= link_to "Edit", edit_admin_user_path(category), class:'btn btn-primary' %>	 
+                  <%= link_to "Delete", admin_user_path(category), class:'btn btn-danger', method: :delete, data: {confirm:'Are you sure?'} %>
+                  </td>
+                 
+                </tr>
+                 <% end %>
+
+              </table>
